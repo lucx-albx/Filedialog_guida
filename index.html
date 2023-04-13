@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alba - Introduzione Filedialog</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row color1 fixed-top sh-box">
+            <div class="col-12 d-flex align-items-center justify-content-around ">
+                <a href="./index.html" style="text-decoration: none; color: white;"><div class="text-white nav-btn d-none d-md-block "> <strong> <font face="Comic Sans">HOME</font> </strong></div></a>
+                <a href="./download.html" style="text-decoration: none; color: white;"><div class="text-white nav-btn d-none d-md-block"> <strong> <font face="Comic Sans">DOWNLOAD</font></strong></div></a>
+            </div>
+
+             <div class="col-sm-8 col-7 d-md-none">
+                <nav class="navbar navbar-light amber lighten-4 mb-4">
+                        <button class="navbar-toggler first-button mt-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+                        aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon1"><span></span><span></span><span></span></div>
+                        </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent20">
+                        <ul class="navbar-nav mr-5 ">
+                            <li class="nav-item active mt-5">
+                            <a class="nav-link nav-btn" href="./index.html" style="text-decoration: none; color: white;"><strong><font face="Comic Sans">HOME</font></strong></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link nav-btn" href="./download.html" style="text-decoration: none; color: white;"><strong> <font face="Comic Sans">DOWNLOAD</font></strong></a>
+                            </li>
+                        </ul> 
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- inizio introduzione widgets -->
+
+    <div class="row mt-6">
+        <div class="col-12 d-flex justify-content-center mt-3">
+            <h1 class="Introduzione-Title" data-aos="fade-down-right"><font>Filedialog</font> </h1>
+        </div>
+        
+        <div class="col-12 mt-5">
+            <div class="SubTitle" >
+                <strong class="Subtext typing-effect">Che cos'è il file dialog</strong>
+            </div>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up">
+            <p class="ml-5">
+                Il filedialog è un widgets della tkinter, per poterlo utilizzare dovremmo importalo, una volta importato potremmo utilizzarlo e questo e ciò 
+                che andremo a vedere in questa guida. <br>
+                <pre class="Code_Style ml-5">
+
+<code class="purple"> from <span class="gray">tkinter</span> import <span class="gray">filedialog</span></code>
+                </pre> <br> 
+            </p>
+        </div>
+
+        <div class="col-12 mt-5">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 Contenitore-Spiegazione" data-aos="fade-down">
+
+                    <div class="SubTitle mt-In" data-aos="fade-right">
+                        <strong class="Subtext">Indici per le keyword del filedialog</strong>
+                    </div>
+
+                    <div class="ml-4">
+                        <a href="#title">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text ml-5">title</span>
+                            </button>
+                        </a> <br>
+
+                        <a href="#initialdir">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">initialdir</span>
+                            </button>
+                        </a> <br>
+
+                        <a href="#filetypes">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">filetypes</span>
+                            </button>
+                        </a> <br>
+
+                        <a href="#defaultextension">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle " aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text ml-5">defaultextension</span>
+                            </button>
+                        </a> <br>
+
+                        <a href="#initialfile">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">initialfile</span>
+                            </button>
+                        </a> <br>
+
+                        <a href="#multiple">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">multiple</span>
+                            </button>
+                        </a> <br>
+                    </div>
+
+                    
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 Contenitore-Spiegazione mt-xl-0 mt-lg-0 mt-md-0 mt-5" data-aos="fade-down">
+
+                    <div class="SubTitle mt-In" data-aos="fade-right">
+                        <strong class="Subtext">Indici per i metodi del filedialog</strong>
+                    </div>
+
+                    <div class="ml-4">
+                        <a href="#askopenfile">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text ml-5">askopenfile</span>
+                            </button>
+                        </a> <br>
+
+                        <a href="#asksaveasfile">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">asksaveasfile</span>
+                            </button>
+                        </a> <br>
+
+                        <a href="#askopenfilename">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">askopenfilename</span>
+                            </button>
+                        </a> <br>
+
+                        <a href="#asksaveasfilename">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle " aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text ml-5">asksaveasfilename</span>
+                            </button>
+                        </a> <br>
+
+                        <a href="#askdirectory">
+                            <button class="learn-more bt-more mt-3">
+                                <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">askdirectory</span>
+                            </button>
+                        </a> <br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-12 d-flex justify-content-center mt-5">
+            <h1 class="Introduzione-Title" data-aos="fade-down-right"><font>Key word</font> </h1>
+        </div>
+
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="title"></a>
+            <strong class="Subtext" data-aos="fade-right">title:</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                La keyword in questione ci permette di aggiungere un titolo alla finestra che viene aperta quando viene attivato, 
+                ad esempio, il widget tkinter.filedialog. Ecco un esempio + risultato immagine: <br>
+                <pre class="Code_Style ml-5">
+
+<code> tkinter.filedialog.askopenfile(title = <span class="red">"apertura file"</span>) 
+                </code></pre>
+            </p>
+
+            <div class="d-flex justify-content-start mt-4 ml-5" data-aos="zoom-in-up">
+                <img src="./image/title.png" alt="" class="img-fluid">
+            </div>
+            
+        </div>
+
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="initialdir"></a>
+            <strong class="Subtext" data-aos="fade-right">initialdir:</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                Questa keyword ci permette di impostare il percorso predefinito quando viene attivato il nostro widget. Di base, tale percorso corrisponde a
+                quello del file Python in cui si trova il codice. Ecco un esempio:  <br>
+                <pre class="Code_Style ml-5">
+
+<code> tkinter.filedialog.askopenfile(initialdir = <span class="red">"/home"</span>)
+                </code></pre>
+            </p>
+
+            <div class="d-flex justify-content-start mt-4 ml-5" data-aos="zoom-in-up">
+                <img src="./image/initaldir.png" alt="" class="img-fluid">
+            </div>
+            
+        </div>
+
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="filetypes"></a>
+            <strong class="Subtext" data-aos="fade-right">filetypes:</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                questa keyword ci permette di impostare che tipo di file vogliamo andare ad aprire o caricare. Questo widget richiede una lista e poi una tupla al suo 
+                interno dove il primo valore sarà una specie di titolo che vogliamo dare mentre il secondo argomento della tupla è un’ altra tupla 
+                che richiede un valore di tipo stringa delle estensioni che vogliamo andare ad accettare , ecco un esempio:<br>
+                <pre class="Code_Style ml-5">
+
+<code> filedialog.askopenfile(filetypes = [(<span class="red">"Seleziona il file python"</span>,(<span class="red">"*.py"</span>))])
+                </code></pre>
+            </p>
+
+            <div class="d-flex justify-content-start mt-4 ml-5" data-aos="zoom-in-up">
+                <img src="./image/filetypes.png" alt="" class="img-fluid">
+            </div>
+            
+        </div>
+
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="defaultextension"></a>
+            <strong class="Subtext" data-aos="fade-right">defaultextension:</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                questa keyword serve per specificare un’estensione di file predefinita da utilizzare quando l’utente non specifica un’estensione di file 
+                durante la selezione del file:<br>
+                <pre class="Code_Style ml-5">
+
+<code> filedialog.asksaveasfilename(defaultextension = <span class="red">".txt"</span>)
+                </code></pre>
+            </p>
+
+            <div class="d-flex justify-content-start mt-4 ml-5" data-aos="zoom-in-up">
+                <img src="./image/defaultextension.png" alt="" class="img-fluid">
+            </div>
+            
+        </div>
+
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="initialfile"></a>
+            <strong class="Subtext" data-aos="fade-right">initialfile:</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                questa keyword serve per specificare il nome di un file predefinito da mostrare all’utente nella finestra di dialogo di selezione del file, ecco un esempio:<br>
+                <pre class="Code_Style ml-5">
+
+<code> filedialog.askopenfile(initialfile = <span class="red">"filedialog.py"</span>)
+                </code></pre>
+            </p>
+
+            <div class="d-flex justify-content-start mt-4 ml-5" data-aos="zoom-in-up">
+                <img src="./image/initialfile.png" alt="" class="img-fluid">
+            </div>
+            
+        </div>
+
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="multiple"></a>
+            <strong class="Subtext" data-aos="fade-right">multiple:</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                questa keyword consente all’utente di di selezionare più file contemporaneamente nella finestra di dialogo di selezione dei file, multiple 
+                accetta un valore booleano e se è impostato su 
+                True permette all’utente di selezionare con il tasto “ctrl” tutti i file:<br>
+                <pre class="Code_Style ml-5">
+
+<code> filedialog.askopenfile(multiple = <span class="blue">True</span>)
+                </code></pre>
+            </p>
+
+            <div class="d-flex justify-content-start mt-4 ml-5" data-aos="zoom-in-up">
+                <img src="./image/multiple.png" alt="" class="img-fluid">
+            </div>
+            
+        </div>
+
+        <div class="col-12 d-flex justify-content-center mt-5">
+            <h1 class="Introduzione-Title" data-aos="fade-down-right"><font>Metodi</font> </h1>
+        </div>
+
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="askopenfile"></a>
+            <strong class="Subtext" data-aos="fade-right">filedialog.askopenfile – filedialog.askopenfiles:</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                questi metodi vengono utilizzate per aprire una finestra di dialogo di selezione dei file. 
+                Il filedialog.askopenfile consente all’utente di selezionare un singolo file da aprire mentre filedialog.askopenfiles consente all’utente di 
+                selezionare più file, entrambe le funzioni restituiscono un oggetto “file” aperto in modalità lettura.
+            </p>
+        </div>
+
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="asksaveasfile"></a>
+            <strong class="Subtext" data-aos="fade-right">filedialog.asksaveasfile:</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                questo metodo viene utilizzato  per aprire una finestra di dialogo di salvataggio file e consentire 
+                all’utente di selezionare un percorso, e un nome del file, in cui salvare il file.
+            </p>
+        </div>
+
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="askopenfilename"></a>
+            <strong class="Subtext" data-aos="fade-right">filedialog.askopenfilename – filedialog.askopenfilenames:</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                questi metodi vengono utilizzati per aprire una finestra di dialogo di selezione dei file. 
+                Il filedialog.askopenfilename consente all’utente di selezionare un singolo file da aprire 
+                mentre filedialog.askopenfilenames consente all’utente di selezionare più file è restituirà una 
+                lista dei percorsi di tutti i file selezionati mentre filedialog.askopenfilename restituirà solo una percorso del file selezionato.
+            </p>
+        </div>
+
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="asksaveasfilename"></a>
+            <strong class="Subtext" data-aos="fade-right">filedialog.asksaveasfilename:</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                questo metodo viene utilizzato per aprire una finestra di dialogo di salvataggio file e consentire all’utente 
+                di selezionare la directory e il nome del file da salvare
+            </p>
+        </div>
+        
+        <div class="SubTitle mt-5" data-aos="fade-right">
+            <a NAME="askdirectory"></a>
+            <strong class="Subtext" data-aos="fade-right">filedialog.askdirectory</strong>
+        </div>
+
+        <div class="col-12 Contenitore-Spiegazione" data-aos="fade-up-right">
+            <p class="ml-5">
+                grazie a questo metodo l’utente è in grado di attraversare le cartelle del sistema operativo 
+                e quando fara click sul pulsante “ok” la funzione restituirà il percorso completo della directory selezionata.
+            </p>
+        </div>
+        
+
+    </div>
+
+     <!-- fine introduzione widgets -->
+
+
+    <div class="row">
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+            .path-0{
+            animation:pathAnim-0 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            }
+        @keyframes pathAnim-0{
+          0%{
+            d: path("M 0,400 C 0,400 0,200 0,200 C 112.48803827751198,174.57416267942585 224.97607655502395,149.14832535885168 314,148 C 403.02392344497605,146.85167464114832 468.5837320574162,169.98086124401917 566,170 C 663.4162679425838,170.01913875598083 792.688995215311,146.92822966507177 888,160 C 983.311004784689,173.07177033492823 1044.6602870813397,222.3062200956938 1131,235 C 1217.3397129186603,247.6937799043062 1328.6698564593303,223.8468899521531 1440,200 C 1440,200 1440,400 1440,400 Z");
+          }
+          25%{
+            d: path("M 0,400 C 0,400 0,200 0,200 C 87.80861244019138,229.7511961722488 175.61722488038276,259.5023923444976 283,242 C 390.38277511961724,224.49760765550238 517.3397129186603,159.74162679425837 612,161 C 706.6602870813397,162.25837320574163 769.023923444976,229.5311004784689 848,252 C 926.976076555024,274.4688995215311 1022.5645933014355,252.13397129186603 1124,236 C 1225.4354066985645,219.86602870813397 1332.7177033492821,209.93301435406698 1440,200 C 1440,200 1440,400 1440,400 Z");
+          }
+          50%{
+            d: path("M 0,400 C 0,400 0,200 0,200 C 76.13397129186606,213.1196172248804 152.26794258373212,226.23923444976077 247,229 C 341.7320574162679,231.76076555023923 455.06220095693766,224.16267942583733 572,222 C 688.9377990430623,219.83732057416267 809.4832535885168,223.11004784688998 908,207 C 1006.5167464114832,190.88995215311002 1083.0047846889952,155.39712918660285 1168,151 C 1252.9952153110048,146.60287081339715 1346.4976076555024,173.30143540669857 1440,200 C 1440,200 1440,400 1440,400 Z");
+          }
+          75%{
+            d: path("M 0,400 C 0,400 0,200 0,200 C 82.26794258373207,159.78947368421052 164.53588516746413,119.57894736842107 268,130 C 371.46411483253587,140.42105263157893 496.12440191387554,201.4736842105263 590,218 C 683.8755980861245,234.5263157894737 746.9665071770336,206.52631578947367 846,180 C 945.0334928229664,153.47368421052633 1080.0095693779904,128.42105263157896 1185,132 C 1289.9904306220096,135.57894736842104 1364.9952153110048,167.78947368421052 1440,200 C 1440,200 1440,400 1440,400 Z");
+          }
+          100%{
+            d: path("M 0,400 C 0,400 0,200 0,200 C 112.48803827751198,174.57416267942585 224.97607655502395,149.14832535885168 314,148 C 403.02392344497605,146.85167464114832 468.5837320574162,169.98086124401917 566,170 C 663.4162679425838,170.01913875598083 792.688995215311,146.92822966507177 888,160 C 983.311004784689,173.07177033492823 1044.6602870813397,222.3062200956938 1131,235 C 1217.3397129186603,247.6937799043062 1328.6698564593303,223.8468899521531 1440,200 C 1440,200 1440,400 1440,400 Z");
+          }
+        }</style><path d="M 0,400 C 0,400 0,200 0,200 C 112.48803827751198,174.57416267942585 224.97607655502395,149.14832535885168 314,148 C 403.02392344497605,146.85167464114832 468.5837320574162,169.98086124401917 566,170 C 663.4162679425838,170.01913875598083 792.688995215311,146.92822966507177 888,160 C 983.311004784689,173.07177033492823 1044.6602870813397,222.3062200956938 1131,235 C 1217.3397129186603,247.6937799043062 1328.6698564593303,223.8468899521531 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#1c2226" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+    </div>
+
+    <div class="row sticky color1 justify-content-center">
+
+        <div class="col-6 col-lg-4 col-xl-4 col-sm-6 col-md-4">
+            <h5 style="color: white;">- Chi Sono?</h5>
+            <p  style="color: white;">Sono Luca ho 17 anni è frequento la 4 ITIS INFO. <br> A.S 2022/2023</p>
+        </div>
+
+        <div class="col-6 col-lg-4 col-xl-4 col-sm-6 col-md-4">
+            <h5 style="color: white;">- Come nasce il progetto?</h5>
+            <p  style="color: white;">Questo progetto è una presentazione per il widgets filedialog del modulo tkinter.</p>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
